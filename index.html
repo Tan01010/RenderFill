@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RenderFill</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <form id="ec">
+    <select id="element-select">
+      <option value="" disabled selected>Element</option>
+      <option value="h1">H1</option>
+      <option value="h2">H2</option>
+      <option value="h3">H3</option>
+      <option value="h4">H4</option>
+      <option value="h5">H5</option>
+      <option value="h6">H6</option>
+      <option value="p">P</option>
+      <option value="button">Button</option>
+      <option value="small">Small</option>
+      <option value="input">Input</option>
+      <option value="div">Div</option>
+      <option value="span">Span</option>
+      <option value="ul">Unordered List (ul)</option>
+      <option value="ol">Ordered List (ol)</option>
+      <option value="li">List Item (li)</option>
+      <option value="a">Link (a)</option>
+      <option value="img">Image (img)</option>
+      <option value="table">Table</option>
+      <option value="tr">Table Row (tr)</option>
+      <option value="td">Table Cell (td)</option>
+      <option value="th">Table Header (th)</option>
+      <option value="em">Emphasis (em)</option>
+      <option value="strong">Strong</option>
+      <option value="blockquote">Blockquote</option>
+      <option value="code">Code</option>
+      <option value="pre">Preformatted Text (pre)</option>
+      <option value="hr">Horizontal Rule (hr)</option>
+      <option value="br">Line Break (br)</option>
+      <option value="label">Label</option>
+      <option value="textarea">Textarea</option>
+      <option value="select">Select</option>
+      <option value="option">Option</option>
+    </select>
+    <input type="text" id="element-content" placeholder="Inside"><br>
+    <button type="button" id="render-button">Render</button>
+    <button type="button" id="clear-button">Clear</button>
+  </form>
+  <div id="result-container">
+    <p id="result"></p>
+    <pre id="html-code"></pre>
+  </div>
+</body>
+</html>
