@@ -1,41 +1,40 @@
 * {
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 10px;
-  box-sizing: border-box; /* Ensures padding and border are included in width */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: blanchedalmond;
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif; /* Use a commonly available font */
-}
-
-html {
-  border: 0;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px; /* Limit maximum width of content */
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 1rem;
   box-sizing: border-box;
 }
 
 form {
   width: 100%;
-  max-width: 400px; /* Adjust max-width for better readability on smaller screens */
+  max-width: 400px;
   background-color: #ffecd6;
   padding: 1rem;
   border-radius: 10px;
   border: 3px solid black;
+}
+
+form > * {
   margin-bottom: 1rem;
 }
 
@@ -45,7 +44,6 @@ select, input, button {
   font-size: 1rem;
   border-radius: 5px;
   border: 3px solid black;
-  box-sizing: border-box;
 }
 
 button, select:hover {
@@ -54,10 +52,11 @@ button, select:hover {
 
 #result-container {
   width: 100%;
+  max-width: 800px;
   background-color: #ffecd6;
-  border: 3px solid black;
   padding: 1rem;
   border-radius: 10px;
+  border: 3px solid black;
 }
 
 #result, #html-code {
@@ -187,26 +186,18 @@ button, select:hover {
 /* Responsive Design */
 
 @media (min-width: 768px) {
-  body, html {
-    flex-direction: row; /* Switch to row direction for larger screens */
-    justify-content: center;
-    align-items: flex-start;
-  }
-
   .container {
-    flex-direction: row; /* Arrange form and result side by side */
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
   }
 
   form {
-    width: calc(50% - 1rem); /* Adjust form width for better spacing */
-    margin-right: 1rem;
-    margin-bottom: 0; /* Remove bottom margin for better alignment */
+    width: 40%;
+    margin-right: 2%;
+    margin-bottom: 0;
   }
 
   #result-container {
-    width: calc(50% - 1rem); /* Adjust result container width */
-    margin-left: 1rem;
+    width: 58%;
+    margin-left: 2%;
   }
 }
